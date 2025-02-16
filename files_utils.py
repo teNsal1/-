@@ -51,3 +51,9 @@ def write_txt(data: str, file_path: str, encoding: str = 'utf-8') -> None:
 def append_txt(data: str, file_path: str, encoding: str = 'utf-8') -> None:
     with open(file_path, 'a', encoding=encoding) as file:
         file.write(data)
+
+# yaml
+
+def read_yaml(file_path: str) -> Union[dict, list]:
+    with open(file_path, 'r') as file:
+        return yaml.safe_load(file)
