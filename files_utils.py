@@ -37,3 +37,17 @@ def append_csv(data: List[dict], file_path: str, delimiter: str = ';', encoding:
     existing_data = read_csv(file_path, delimiter, encoding)
     existing_data.extend(data)
     write_csv(existing_data, file_path, delimiter, encoding)
+
+# txt
+
+def read_txt(file_path: str, encoding: str = 'utf-8') -> str:
+    with open(file_path, 'r', encoding=encoding) as file:
+        return file.read()
+    
+def write_txt(data: str, file_path: str, encoding: str = 'utf-8') -> None:
+    with open(file_path, 'w', encoding=encoding) as file:
+        file.write(data)
+
+def append_txt(data: str, file_path: str, encoding: str = 'utf-8') -> None:
+    with open(file_path, 'a', encoding=encoding) as file:
+        file.write(data)
