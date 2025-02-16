@@ -1,0 +1,4 @@
+weather_app:
+  api_key: '12345'
+  city: Moscow
+  units: metric

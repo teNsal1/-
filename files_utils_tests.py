@@ -18,10 +18,10 @@ append_csv([{"name": "Alla", "age": 27,}], "test.csv")
 print("CSV после добавления:", read_csv("test.csv"))
 
 # тест txt
-write_txt= ("Hello, World!", "text.txt")
-print("TXT после записи:", read_txt("text.txt"))
-append_txt("\nAppended line", "text.txt")
-print("TXT после добавления:", read_txt("text.txt"))
+write_txt("Hello, World!", "test.txt")
+print("TXT после записи:", read_txt("test.txt"))
+append_txt("\nAppended line", "test.txt")
+print("TXT после добавления:", read_txt("test.txt"))
 
 # тест yaml
 weather_config = {
